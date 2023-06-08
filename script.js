@@ -53,10 +53,10 @@ function startProcess(event){
 	if(gameOn){
 		count++;
 		if(turn==0){
-			event.srcElement.innerText="X";
+			event.srcElement.innerText="x";
 			//playerName.innerText=player2+", you are up";
 		}else{
-			event.srcElement.innerText="O";
+			event.srcElement.innerText="o";
 			//playerName.innerText=player1+", you are up";
 		}
 		won=checkWin();
@@ -69,7 +69,7 @@ function startProcess(event){
 		}else{
 			let winner=playerName.innerText;
 			if(winner.includes(player1)) playerName.innerText=player1+", congratulations you won!";
-			else playerName.innerText=player2+", congratulations you won!";
+			else playerName.innerText=player2+" congratulations you won!";
 		}
 		if(turn==1){
 			turn=0;
@@ -90,68 +90,68 @@ function checkWin(){
 
 	let gridItems = document.getElementsByClassName("grid-items");
 	
-	if(gridItems[0].innerText=='X' && gridItems[1].innerText=='X' && gridItems[2].innerText=='X'){
+	if(gridItems[0].innerText=='x' && gridItems[1].innerText=='x' && gridItems[2].innerText=='x'){
 		setWinColor(gridItems[0],gridItems[1],gridItems[2])
 		return true;
 	} 
-	if(gridItems[3].innerText=='X' && gridItems[4].innerText=='X' && gridItems[5].innerText=='X'){
+	if(gridItems[3].innerText=='x' && gridItems[4].innerText=='x' && gridItems[5].innerText=='x'){
 		setWinColor(gridItems[3],gridItems[4],gridItems[5])
 		return true;
 	} 
-	if(gridItems[6].innerText=='X' && gridItems[7].innerText=='X' && gridItems[8].innerText=='X'){
+	if(gridItems[6].innerText=='x' && gridItems[7].innerText=='x' && gridItems[8].innerText=='x'){
 		setWinColor(gridItems[6],gridItems[7],gridItems[8])
 		return true;
 	} 
-	if(gridItems[0].innerText=='X' && gridItems[4].innerText=='X' && gridItems[8].innerText=='X'){
+	if(gridItems[0].innerText=='x' && gridItems[4].innerText=='x' && gridItems[8].innerText=='x'){
 		setWinColor(gridItems[0],gridItems[4],gridItems[8])
 		return true;
 	} 
-	if(gridItems[2].innerText=='X' && gridItems[4].innerText=='X' && gridItems[6].innerText=='X'){
+	if(gridItems[2].innerText=='x' && gridItems[4].innerText=='x' && gridItems[6].innerText=='x'){
 		setWinColor(gridItems[2],gridItems[4],gridItems[6])
 		return true;
 	}
-	if(gridItems[0].innerText=='X' && gridItems[3].innerText=='X' && gridItems[6].innerText=='X'){
+	if(gridItems[0].innerText=='x' && gridItems[3].innerText=='x' && gridItems[6].innerText=='x'){
 		setWinColor(gridItems[0],gridItems[3],gridItems[6])
 		return true;
 	} 
-	if(gridItems[1].innerText=='X' && gridItems[4].innerText=='X' && gridItems[7].innerText=='X'){
+	if(gridItems[1].innerText=='x' && gridItems[4].innerText=='x' && gridItems[7].innerText=='x'){
 		setWinColor(gridItems[1],gridItems[4],gridItems[7])
 		return true;
 	} 
-	if(gridItems[2].innerText=='X' && gridItems[5].innerText=='X' && gridItems[8].innerText=='X'){
+	if(gridItems[2].innerText=='x' && gridItems[5].innerText=='x' && gridItems[8].innerText=='x'){
 		setWinColor(gridItems[2],gridItems[5],gridItems[8])
 		return true;
 	} 
 
-	if(gridItems[0].innerText=='O' && gridItems[1].innerText=='O' && gridItems[2].innerText=='O'){
+	if(gridItems[0].innerText=='o' && gridItems[1].innerText=='o' && gridItems[2].innerText=='o'){
 		setWinColor(gridItems[0],gridItems[1],gridItems[2])
 		return true;
 	}
-	if(gridItems[3].innerText=='O' && gridItems[4].innerText=='O' && gridItems[5].innerText=='O'){
+	if(gridItems[3].innerText=='o' && gridItems[4].innerText=='o' && gridItems[5].innerText=='o'){
 		setWinColor(gridItems[3],gridItems[4],gridItems[5])
 		return true;
 	} 
-	if(gridItems[6].innerText=='O' && gridItems[7].innerText=='O' && gridItems[8].innerText=='O'){
+	if(gridItems[6].innerText=='o' && gridItems[7].innerText=='o' && gridItems[8].innerText=='o'){
 		setWinColor(gridItems[6],gridItems[7],gridItems[8])
 		return true;
 	}
-	if(gridItems[0].innerText=='O' && gridItems[4].innerText=='O' && gridItems[8].innerText=='O'){
+	if(gridItems[0].innerText=='o' && gridItems[4].innerText=='o' && gridItems[8].innerText=='o'){
 		setWinColor(gridItems[0],gridItems[4],gridItems[8])
 		return true;
 	}
-	if(gridItems[2].innerText=='O' && gridItems[4].innerText=='O' && gridItems[6].innerText=='O'){
+	if(gridItems[2].innerText=='o' && gridItems[4].innerText=='o' && gridItems[6].innerText=='o'){
 		setWinColor(gridItems[2],gridItems[4],gridItems[6])
 		return true;
 	}
-	if(gridItems[0].innerText=='O' && gridItems[3].innerText=='O' && gridItems[6].innerText=='O'){
+	if(gridItems[0].innerText=='o' && gridItems[3].innerText=='o' && gridItems[6].innerText=='o'){
 		setWinColor(gridItems[0],gridItems[3],gridItems[6])
 		return true;
 	} 
-	if(gridItems[1].innerText=='O' && gridItems[4].innerText=='O' && gridItems[7].innerText=='O'){
+	if(gridItems[1].innerText=='o' && gridItems[4].innerText=='o' && gridItems[7].innerText=='o'){
 		setWinColor(gridItems[1],gridItems[4],gridItems[7])
 		return true;
 	} 
-	if(gridItems[2].innerText=='O' && gridItems[5].innerText=='O' && gridItems[8].innerText=='O'){
+	if(gridItems[2].innerText=='o' && gridItems[5].innerText=='o' && gridItems[8].innerText=='o'){
 		setWinColor(gridItems[2],gridItems[5],gridItems[8])
 		return true;
 	} 
