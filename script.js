@@ -36,7 +36,7 @@ function showBoard(){
 
 function gameStart(player1){
 	let playerName=document.getElementById("playerName");
-	playerName.innerText=`${player1}, you are up`;
+	playerName.innerText=`${player1}, you're up`;
 }
 
 
@@ -62,9 +62,9 @@ function startProcess(event){
 		won=checkWin();
 		if(!won){
 			if(turn==0){
-				playerName.innerText=player2+", you are up";
+				playerName.innerText=player2+", you're up";
 			}else{
-				playerName.innerText=player1+", you are up";
+				playerName.innerText=player1+", you're up";
 			}
 		}else{
 			let winner=playerName.innerText;
