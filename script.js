@@ -68,7 +68,7 @@ function startProcess(event){
 			}
 		}else{
 			let winner=playerName.innerText;
-			if(winner.includes(player1)) playerName.innerText=player1+", congratulations you won!";
+			if(winner.includes(player1)) playerName.innerText=player1+" congratulations you won!";
 			else playerName.innerText=player2+" congratulations you won!";
 		}
 		if(turn==1){
